@@ -53,11 +53,11 @@ mark.classList.add("green")
 // Отсортировать li внутри списка в обратном порядке (по тексту внутри)
 
 let [...children] = document.querySelector('ul').children;
-const newList = children.sort((prev, next) => {
-  console.log(prev.textContent)
-  return next.textContent - prev.textContent
-});
-console.log(newList);
+// const newList = children.sort((prev, next) => {
+//   console.log(prev.textContent)
+//   return next.textContent - prev.textContent
+// });
+children.forEach((child) => console.log(child.textContent));
 
 //??
 
